@@ -9,6 +9,6 @@ namespace TN.PhoneManagment.Contact.Events
         public Guid OrderId { get; set; }
         public Status Status { get; set; }
         public double totalPrice { get; set; }
-        public Guid SmartPhoneId { get; set; }
+        public List<Guid> SmartPhoneIds { get; set; }
     }
 }

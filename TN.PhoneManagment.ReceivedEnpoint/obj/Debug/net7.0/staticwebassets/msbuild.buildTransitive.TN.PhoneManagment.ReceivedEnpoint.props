@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TN.PhoneManagment.ReceivedEnpoint.props" />
-</Project>

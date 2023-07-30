@@ -7,6 +7,6 @@ namespace TN.PhoneManagment.Contact.Interfaces
         public Guid OrderId { get; set; }
         public Status Status{ get; set; }
         public double totalPrice { get; }
-        public Guid SmartPhoneId { get; set; }
+        public List<Guid> SmartPhoneIds { get; set; }
     }
 }

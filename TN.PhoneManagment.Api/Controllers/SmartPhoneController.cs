@@ -2,11 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using TN.PhoneManagment.Api.Models;
 using TN.PhoneManagment.Contact.DTOs;
-using TN.PhoneManagment.Contact.DTOs.Saga;
-using TN.PhoneManagment.Contact.Enum;
 using TN.PhoneManagment.Contact.Events;
 using TN.PhoneManagment.Contact.Interfaces;
-using TN.PhoneManagment.Contact.Interfaces.Saga;
 
 namespace TN.PhoneManagment.Api.Controllers
 {
@@ -68,7 +65,7 @@ namespace TN.PhoneManagment.Api.Controllers
                 OrderId = Guid.NewGuid(),
                 Status = orderDTO.Status,
                 totalPrice = orderDTO.totalPrice,
-                SmartPhoneId = orderDTO.SmartPhoneId
+                SmartPhoneIds = orderDTO.SmartPhoneIds
             };
             await _publishEndpoint.Publish<ISubmitOrder>(message);
 
@@ -76,16 +73,16 @@ namespace TN.PhoneManagment.Api.Controllers
         }
 
         [HttpPost]
-        [Route(nameof(InTransit))]
-        public async Task<IActionResult> InTransit([FromBody] InTransitOrderDTO inTransit)
+        [Route(nameof(UpdateStatus))]
+        public async Task<IActionResult> UpdateStatus([FromBody] UpdateStatusDTO request)
         {
-            var message = new SagaInTransitOrderDTO
+            var message = new UpdateStatus
             {
-                DateUpdated = DateTime.UtcNow,
-                OrderId = inTransit.OrderId,
-                Status = Status.InTransit,
+                LastUpdatedDate = DateTime.UtcNow,
+                OrderId = request.OrderId,
+                Status = request.Status,
             };
-            await _publishEndpoint.Publish<ISagaInTransitOrder>(message);
+            await _publishEndpoint.Publish<IUpdateStatus>(message);
 
             return Ok(true);
         }

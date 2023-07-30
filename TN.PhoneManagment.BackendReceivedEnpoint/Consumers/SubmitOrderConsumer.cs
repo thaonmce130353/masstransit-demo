@@ -32,12 +32,27 @@ namespace TN.PhoneManagment.BackendReceivedEnpoint.Consumers
             var order = new Order
             {
                 totalPrice = context.Message.totalPrice,
-                Status = (int)Status.Submitted,
-                LastModifiedDate = DateTime.Now,
-                SmartPhoneId = context.Message.SmartPhoneId,
+                LastModifiedDate = DateTime.Now
             };
 
+            order.setStatus(context.Message.Status);
+
             await _context.orders.AddAsync(order);
+            await _context.SaveChangesAsync();
+
+            var orderPhones = new List<OrderPhone>();
+            context.Message.SmartPhoneIds.ForEach(phoneId =>
+            {
+                orderPhones.Add(new OrderPhone()
+                {
+                    OrderId = order.CorrelationId,
+                    SmartPhoneId = phoneId,
+                    CorrelationId = Guid.NewGuid(),
+                    LastModifiedDate = DateTime.Now
+                });
+            });
+
+            _context.orderPhones.AddRange(orderPhones);
             await _context.SaveChangesAsync();
 
             _logger.LogInformation("Submit Order successful. orderId: @{ID}", order.CorrelationId);

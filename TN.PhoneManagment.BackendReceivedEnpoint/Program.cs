@@ -21,8 +21,7 @@ builder.Services.AddMassTransit(x =>
             ep.PrefetchCount = 16;
             ep.UseMessageRetry(r => r.Interval(2, 100));
             ep.ConfigureConsumer<SubmitOrderConsumer>(provider);
-            ep.ConfigureConsumer<InTransitOrderConsumer>(provider);
-            ep.ConfigureConsumer<OrderDeliveredConsumer>(provider);
+            ep.ConfigureConsumer<UpdateStatusConsumer>(provider);
         });
     }));
 });

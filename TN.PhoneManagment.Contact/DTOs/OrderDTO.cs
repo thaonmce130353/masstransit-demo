@@ -6,7 +6,7 @@ namespace TN.PhoneManagment.Contact.DTOs
     {
         public Status Status { get; set; }
         public double totalPrice { get; set; }
-        public Guid SmartPhoneId { get; set; }
+        public List<Guid> SmartPhoneIds { get; set; }
         public Guid Id { get; set; }
         public DateTime? LastModifiedDate { get; set; }
     }
