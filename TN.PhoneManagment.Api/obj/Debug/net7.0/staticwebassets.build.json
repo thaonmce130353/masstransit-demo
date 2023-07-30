@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8rAQkSsHGcHJdU0t1a9hbtjW/kj40QLy29YQxUHRVpw=",
+  "Source": "TN.PhoneManagment.Api",
+  "BasePath": "_content/TN.PhoneManagment.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

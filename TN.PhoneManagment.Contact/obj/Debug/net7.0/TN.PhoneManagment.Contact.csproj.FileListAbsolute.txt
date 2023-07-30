@@ -1,0 +1,12 @@
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\bin\Debug\net7.0\TN.PhoneManagment.Contact.deps.json
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\bin\Debug\net7.0\TN.PhoneManagment.Contact.dll
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\bin\Debug\net7.0\TN.PhoneManagment.Contact.pdb
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.csproj.AssemblyReference.cache
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.GeneratedMSBuildEditorConfig.editorconfig
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.AssemblyInfoInputs.cache
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.AssemblyInfo.cs
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.csproj.CoreCompileInputs.cache
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.dll
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\refint\TN.PhoneManagment.Contact.dll
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\TN.PhoneManagment.Contact.pdb
+E:\Masstransit Sharing\Demo\TN.PhoneManagment.Api\TN.PhoneManagment.Contact\obj\Debug\net7.0\ref\TN.PhoneManagment.Contact.dll

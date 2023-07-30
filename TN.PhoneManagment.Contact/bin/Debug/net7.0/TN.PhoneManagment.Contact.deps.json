@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TN.PhoneManagment.Contact/1.0.0": {
+        "runtime": {
+          "TN.PhoneManagment.Contact.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TN.PhoneManagment.Contact/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
