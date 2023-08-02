@@ -34,7 +34,7 @@ namespace TN.PhoneManagment.BackendReceivedEnpoint.Consumers
                 return;
             }
 
-            order.LastModifiedDate = context.Message.UpdatedDate;
+            order.LastModifiedDate = DateTime.Now;
             order.setStatus(context.Message.Status);
 
             await _context.SaveChangesAsync();
